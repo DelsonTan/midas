@@ -65,6 +65,31 @@ select   {
   padding: 5px 10px;
 }
 
+.panel.spinach {
+  background-color: #BAF2BB;
+  border: 1px solid #93BF93;
+}
+
+.panel.iron {
+  background-color: #F2BAC9;
+  border: 1px solid #BF939E;
+}
+
+.panel.tin {
+  background-color: #BAD7F2;
+  border: 1px solid #93A9BF;
+}
+
+.panel.lead {
+  background-color: #E1E4E7;
+  border: 1px solid #B9BCBF;
+}
+
+.panel.gold {
+  background-color: #FFF195;
+  border: 1px solid #CCC076;
+}
+
 .counter {
   min-width: 100px;
 }

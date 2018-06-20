@@ -138,7 +138,7 @@ class ResourcePanel extends React.Component {
   render() {
     const {resource, resources, transmute} = this.props;
     return (
-      <div className='panel'>
+      <div className={`panel ${resource.name}`}>
         <Counter label={resource.label} quantity={resource.quantity} />
         {resource.name === 'gold' && <p>{`Total produced: ${resource.produced}`}</p>}
         {

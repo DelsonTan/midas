@@ -27,7 +27,7 @@ class IndustryPanel extends React.Component {
 
     if (industry.maxQuantity) {
       return (
-        <div className='panel'>
+        <div className={`panel ${industry.targetResource}`}>
           <Counter label={industry.label} quantity={industry.quantity} />
           <Button
             label='Collect'
@@ -42,7 +42,7 @@ class IndustryPanel extends React.Component {
       );
     } else {
       return (
-        <div className='panel'>
+        <div className={`panel ${industry.targetResource}`}>
           <Button
             inactive={resources['gold'].quantity < industry.costToBuild}
             label={`Build ${industry.label}`}
